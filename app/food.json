@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "237603043126",
+    "firebase_url": "https://food-20bbf-default-rtdb.firebaseio.com",
+    "project_id": "food-20bbf",
+    "storage_bucket": "food-20bbf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237603043126:android:29f570eb0cbc3b102ce597",
+        "android_client_info": {
+          "package_name": "com.Food"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlWnR4_jMau0nfjppkpp1WPX4p5heOECk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

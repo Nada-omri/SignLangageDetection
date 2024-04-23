@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "733888633230",
+    "firebase_url": "https://feelings-98a53-default-rtdb.firebaseio.com",
+    "project_id": "feelings-98a53",
+    "storage_bucket": "feelings-98a53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733888633230:android:02bf28b12ce92bea36ecdf",
+        "android_client_info": {
+          "package_name": "com.feelings"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXmugZPvwabU5d2zV9MHn7o5crcukmU20"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

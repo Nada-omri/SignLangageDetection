@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1049750937678",
+    "firebase_url": "https://family-35c6c-default-rtdb.firebaseio.com",
+    "project_id": "family-35c6c",
+    "storage_bucket": "family-35c6c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049750937678:android:69529d1bd5f9d58099a31f",
+        "android_client_info": {
+          "package_name": "com.family"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4eQ9U33DSwiSU13OxoZ9tAYQErsiF3kE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

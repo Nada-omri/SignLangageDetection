@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6E0EF">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewActions"
+        android:layout_width="159dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="192dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="107dp"
+                android:layout_height="88dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/actions"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/actions"
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView4"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Actions"
+                android:textColor="#2A4E62"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="146dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+
+                android:textColor="#000080"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:text="Dictionnary Actions"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="152dp"
+                android:layout_height="82dp"
+                android:layout_below="@id/textView7"
+                android:gravity="center"
+
+
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#000080"
+                android:text="Play with ASL actions"
+                android:visibility="gone"/>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_marginTop="70dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="?android:attr/listDivider" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewFeelings"
+        android:layout_width="159dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="192dp"
+        android:layout_toRightOf="@id/cardViewActions"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/feelings"
+                android:layout_width="107dp"
+                android:layout_height="88dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/feelings" />
+
+            <TextView
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/feelings"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Feelings"
+                android:textColor="#2A4E62"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewFood"
+        android:layout_width="159dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="52dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="16dp"
+        android:layout_below="@id/cardViewActions">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/food"
+                android:layout_width="107dp"
+                android:layout_height="88dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/food" />
+
+            <TextView
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/food"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Food"
+                android:textColor="#2A4E62"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewFamily"
+        android:layout_width="159dp"
+        android:layout_height="141dp"
+        android:layout_below="@id/cardViewFeelings"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="52dp"
+        android:layout_toRightOf="@id/cardViewFood"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="16dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/family"
+                android:layout_width="107dp"
+                android:layout_height="88dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/family" />
+
+            <TextView
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/family"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Family"
+                android:textColor="#2A4E62"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/SignLangageText"
+        android:layout_width="260dp"
+        android:layout_height="47dp"
+        android:gravity="center"
+        android:text="Learn Sign Langage"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#2A4E62"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SignLangageText"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="4dp"
+        android:text="Discover ASL lessons"
+        android:textColor="#2A4E62"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
