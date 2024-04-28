@@ -28,7 +28,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class SearchFamily extends AppCompatActivity {
-    TextView text, introuvable;
+    TextView text;
     Button generate;
     ImageView result;
     public static ArrayList<ModelClass> listOfQues;
@@ -70,7 +70,7 @@ public class SearchFamily extends AppCompatActivity {
         text = findViewById(R.id.input_text);
         generate = findViewById(R.id.generate_btn);
         result = findViewById(R.id.image_view);
-        introuvable = findViewById(R.id.introuvable);
+
 
         generate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,9 +79,6 @@ public class SearchFamily extends AppCompatActivity {
                 // Check if search text is not null or empty
                 if (!search.isEmpty()) {
                     checkAnswer(search);
-                } else {
-                    // Optionally, handle the case where search text is empty
-                    introuvable.setText("Please enter a search term.");
                 }
             }
         });
@@ -98,9 +95,11 @@ public class SearchFamily extends AppCompatActivity {
                         .into(result); // Use the correct ImageView object
                 return; // Exit the loop once a match is found
             }
+            else{
+                result.setImageResource(R.drawable.img);
+            }
         }
-        // If no match is found, set the text of the TextView
-        introuvable.setText("introuvable");
+
     }
 
     private void fifthFirebaseApp() {

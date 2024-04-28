@@ -72,7 +72,7 @@ public class SearchFeelings extends AppCompatActivity {
         text = findViewById(R.id.input_text);
         generate = findViewById(R.id.generate_btn);
         result = findViewById(R.id.image_view);
-        introuvable = findViewById(R.id.introuvable);
+
 
         generate.setOnClickListener(new View.OnClickListener() {
             @Override

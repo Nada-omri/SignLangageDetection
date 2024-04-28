@@ -9,50 +9,73 @@
     <androidx.camera.view.PreviewView
         android:id="@+id/previewView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent" >
+
+
+    </androidx.camera.view.PreviewView>
 
     <LinearLayout
+        android:id="@+id/topLinearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
         android:orientation="horizontal"
-        android:layout_alignParentBottom="true"
         android:padding="16dp">
 
         <TextView
             android:id="@+id/combined"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="394dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="-10dp"
             android:layout_weight="1"
+            android:textSize="15dp"
+            android:textStyle="bold"
             android:background="@color/black"
             android:textColor="@color/white" />
+
+        <ImageButton
+            android:id="@+id/song"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:background="#D6E0EF"
+            app:backgroundTint="@null"
+            app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
 
         <Button
             android:id="@+id/btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Reset" />
-
-        <ImageButton
-            android:id="@+id/song"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+            android:background="@drawable/button_background"
+            android:text="Reset"
+            app:backgroundTint="#D6E0EF" />
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:scaleType="fitCenter"
-        android:layout_centerInParent="true" />
-
     <TextView
-        android:id="@+id/result"
+        android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Result"
-        android:layout_below="@id/imageView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
+    android:layout_below="@id/topLinearLayout"
+    android:layout_marginTop="50dp"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#2A4E62"
+        android:textStyle="bold"
+    android:text="From Signs to Speech" />
 
-</RelativeLayout>
+<ImageView
+android:id="@+id/imageView"
+android:layout_width="150dp"
+android:layout_height="150dp"
+android:scaleType="fitCenter"
+android:layout_centerInParent="true" />
+
+<TextView
+android:id="@+id/result"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Result"
+android:layout_below="@id/imageView"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="10dp" />
+
+    </RelativeLayout>

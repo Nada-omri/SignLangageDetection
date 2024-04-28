@@ -13,12 +13,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:background="#D6E0EF"
         android:padding="16dp">
 
         <TextView
             android:id="@+id/dialogTimeoutMessage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#2A4E62"
+            android:textStyle="bold"
             android:text="Oops, Timeout"
             android:textSize="18sp" />
 
@@ -26,6 +29,8 @@
             android:id="@+id/dialogTimeoutButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            app:backgroundTint="@null"
             android:layout_marginTop="16dp"
             android:text="Try Again" />
 

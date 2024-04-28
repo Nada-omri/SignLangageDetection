@@ -24,9 +24,9 @@ public class HelloAlex extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_hello_alex);
 
-        imageAlex = findViewById(R.id.alexImg);
+        //imageAlex = findViewById(R.id.alexImg);
         texteAlex = findViewById(R.id.helloAlex);
-        buttonAlex = findViewById(R.id.letsStartAlex);
+        //buttonAlex = findViewById(R.id.letsStartAlex);
         buttonAlex.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -4,60 +4,83 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="20dp"
+    android:addStatesFromChildren="false"
+    android:background="#D6E0EF"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/text_view"
+        android:layout_marginTop="16dp"
+        android:textColor="#2A4E62"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Generate Image now"
-        android:textSize="30sp"
         android:layout_centerHorizontal="true"
-        android:id="@+id/text_view"/>
+        android:text="Dictionnary of family !"
+        android:textSize="30sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:gravity="center"
-        android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="609dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="100dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
 
-        <EditText
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="12dp"
-            android:layout_marginVertical="20dp"
-            android:id="@+id/input_text"
-            android:hint="Write here"/>
+            android:gravity="center"
+            android:orientation="vertical">
 
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:text="Generate"
-            android:padding="12dp"
-            android:id="@+id/generate_btn"/>
-        <ProgressBar
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:id="@+id/progress_bar"
-            android:visibility="gone"
-            android:indeterminateTint="@color/design_default_color_primary"
-            />
+            <LinearLayout
+                android:layout_width="347dp"
+                android:layout_height="103dp"
+                android:orientation="horizontal"
+                >
 
-        <ImageView
-            android:layout_width="256dp"
-            android:layout_height="256dp"
-            android:id="@+id/image_view"
-            android:layout_marginTop="40dp"
-            android:src="#ACACAC"/>
+                <EditText
+                    android:id="@+id/input_text"
+                    android:layout_width="208dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:hint="Write here"
+                    android:layout_marginLeft="12dp"
+                    android:padding="12dp" />
 
-        <TextView
-            android:id="@+id/introuvable"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
 
-    </LinearLayout>
+                <Button
+                    android:id="@+id/generate_btn"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Generate"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/button_background"
+                    app:backgroundTint="@null"
+                    android:layout_marginBottom="23dp"
 
+                    />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:indeterminateTint="@color/design_default_color_primary"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="256dp"
+                android:layout_height="256dp"
+                android:layout_marginTop="40dp"
+                android:src="#ACACAC" />
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>

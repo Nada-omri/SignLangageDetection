@@ -1,43 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HelloAlex">
+    android:background="#D6E0EF"
+    tools:context=".HelloMia">
 
     <TextView
         android:id="@+id/helloAlex"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/alexImg"
-        android:layout_marginTop="16dp" />
-
-    <Button
-        android:id="@+id/letsStartAlex"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="110dp"
+        android:text="Hello Friend I'am Alex"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#2A4E62"
+        android:textStyle="bold"  />
+    <TextView
+        android:id="@+id/textmia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Let's start"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/alexImg"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="10dp"
+        android:text="Together, we'll master the american Sign langage,converting written words into sign language and sign langage into text!"
+        android:gravity="center"
+        android:textColor="#2A4E62"
+        />
 
-    <ImageView
-        android:id="@+id/alexImg"
-        android:layout_width="282dp"
-        android:layout_height="380dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/helloAlex"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/alex" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/letsStartMia"
+        android:layout_width="249dp"
+        android:layout_height="83dp"
+        android:layout_below="@id/miaImg"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#FFF2DC"
+        android:text="Let's start"
+        android:textColor="#001C2F" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/miaImg"
+        android:layout_width="match_parent"
+        android:layout_height="338dp"
+
+        android:layout_marginTop="200dp"
+        android:src="@drawable/miagif" />
+</RelativeLayout>
